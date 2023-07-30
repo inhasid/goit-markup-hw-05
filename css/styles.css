@@ -575,7 +575,58 @@ img {
 .link-footer:hover,
 .link-footer:focus {
     background-color: var(--green-color);
-}    
+}   
+
+.subscribe-conteiner {
+    padding-left: 80px;
+}
+
+.footer-subscribe-button {
+    min-width: 165px;
+    height: 40px;
+    color: var(--white-color);
+    background-color: var(--iris-color);
+    /*text-align: center;*/
+    font-style: normal;
+    padding: 8px 24px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    border: none;
+}
+
+.subscribe-icon {
+    fill: var(--white-color);
+}
+
+.futer-form {
+    display: flex;
+    gap: 24px;
+   /* max-width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--white-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);*/
+}
+
+
+.footer-input {
+    font-family: inherit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.0px;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    padding: 8px 212px 8px 16px;
+    background-color: var(--navy-blue);
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--white, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
 /*-------------------------------------------portfolio page----------------------------------------------------*/
 .section-portfolio {
     padding: 96px 0 120px 0;
