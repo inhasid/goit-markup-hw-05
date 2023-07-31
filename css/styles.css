@@ -275,6 +275,7 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
+    padding-right: 0px;
     transform: translate(-50%, -50%);
     flex-shrink: 0;
     border-radius: 4px;
@@ -288,6 +289,104 @@ img {
 
 .open-modal:hover {
     opacity: 0.8;
+}
+
+.form {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 360px;
+    min-height: 58px;
+    padding: 72px 24px 24px 24px;
+    color: var(--lightslate-colr);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.group-title {
+    width: 100%;
+    color: var(--navy-blue);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding-bottom: 16px;
+
+}
+
+.form-label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4px;
+  /*  font-size: 12px;*/
+}
+
+.form-input {
+    width: 360px;
+    min-height: 40px;
+    padding-left: 38px;
+    border-radius: 4px;
+    border: 1px solid var(--navy-blue, rgba(46, 47, 66, 0.40));
+}
+
+.name-div {
+   /* position: relative;*/
+}
+
+.name-icon {
+    position: absolute;
+    left: 16px;
+    top: 27px;
+    fill: var(--navy-blue);
+
+}
+
+.textarea {
+    max-width: 360px;
+    min-height: 120px;
+    border-radius: 4px;
+    border: 1px solid var(--navy-blue, rgba(46, 47, 66, 0.40));
+    color: var(--navy-blue);
+    padding-top: 8px;
+    padding-left: 16px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 0px;
+}
+
+.check-input {
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.submit-button {
+    width: 169px;
+    height: 56px;
+    margin: 0 auto;
+    padding: 16px 32px;
+    border-radius: 4px;
+    background: var(--iris-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    color: var(--white-color);
+    text-align: center;
 }
 
 .close-button {

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+a<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -533,27 +533,75 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form>
-          <fieldset>
-            <legend>Leave your contacts and we will call you back</legend>
-            <label>
+        <form class="form">
+          <fieldset class="form-group">
+            <legend class="group-title">
+              Leave your contacts and we will call you back
+            </legend>
+            <label class="form-label" for="name">
               Name
-              <input type="text" name="name" placeholder="" checked />
+              <div class="name-div">
+                <svg class="name-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="name"
+                  placeholder=""
+                  id="name"
+                />
+              </div>
             </label>
-            <label>
+            <label class="form-label">
               Phone
-              <input type="tel" name="phone" placeholder="" />
+              <div class="name-div">
+                <svg class="name-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                <input
+                  class="form-input"
+                  type="tel"
+                  name="phone"
+                  placeholder=""
+                />
+              </div>
             </label>
-            <label>
+            <label class="form-label">
               Email
-              <input type="email" name="email" placeholder="" />
+              <div class="name-div">
+                <svg class="name-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                <input
+                  class="form-input"
+                  type="email"
+                  name="email"
+                  placeholder=""
+                />
+              </div>
             </label>
-            <label>
+            <label class="form-label">
               Comment
-              <textarea name="comment" rows="5" placeholder="Text input">
+              <textarea
+                class="textarea"
+                name="comment"
+                rows="5"
+                placeholder="Text input"
+              >
               </textarea>
             </label>
-            <button type="submit">Send</button>
+            <label>
+              <input
+                class="check-input"
+                type="checkbox"
+                name="privacy-policy"
+                value="accept"
+              />
+              I accept the terms and conditions of the
+              <span><a href="">Privacy Policy</a></span>
+            </label>
+            <button class="submit-button button" type="submit">Send</button>
           </fieldset>
         </form>
         <button class="close-button button" type="button" data-modal-close>
