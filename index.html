@@ -514,13 +514,15 @@
             name="footer-subscribe-form"
             autocomplete="off"
           >
-            <input
-              class="footer-input"
-              type="text"
-              name="email-address"
-              placeholder="E-mail"
-            />
-            <button class="footer-subscribe-button" type="submit">
+            <label class="footer-label">
+              <input
+                class="footer-input"
+                type="email"
+                name="email-address"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-subscribe-button button" type="submit">
               Subscribe
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-footer-button"></use>
@@ -533,6 +535,11 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <button class="close-button button" type="button" data-modal-close>
+          <svg class="modal-close-button" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-button"></use>
+          </svg>
+        </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-field">
@@ -604,11 +611,6 @@
 
           <button class="submit-button button" type="submit">Send</button>
         </form>
-        <button class="close-button button" type="button" data-modal-close>
-          <svg class="modal-close-button" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-button"></use>
-          </svg>
-        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
