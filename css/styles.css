@@ -312,7 +312,7 @@ img {
 }
 
 .modal-field {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .modal-label {
@@ -380,13 +380,50 @@ img {
     color: var(--iris-color);
 }
 
-.privacy-policy-link {
-    color: var(--iris-color);
+
+.check {
+    margin-bottom: 24px;
+} 
+
+.privacy-policy {
+    display: flex;
+    align-items: center;
+   /* justify-content: center;*/
+-
 }
 
-.check-input {
-    margin-top: 16px;
-    margin-bottom: 24px;
+.privacy-policy-link {
+    color: var(--iris-color);
+    padding-left: 3px;
+    display: block;
+}
+
+.check-accept {
+    width: 16px;
+    height: 16px;
+    border-radius: 1.5px;
+    border: 1.5px solid  rgba(46, 47, 66, 0.40);
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    fill: transparent;
+    margin-right: auto;
+    /*transition-duration: 300ms;*/
+}
+
+.check-icon {
+    margin-bottom: 0 auto;
+}
+
+.check-input:checked + .privacy-policy .check-accept {
+    background-color: var(--ocean-color);
+    border: none;
+    fill: var(--white-color);
+}
+
+.chek-input:focus + .check-accept {
+    border-color: var(--iris-color);
 }
 
 .submit-button {
