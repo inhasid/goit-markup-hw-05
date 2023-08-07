@@ -428,9 +428,10 @@ img {
     fill: var(--cloud-color);
 }
 
-.chek-input:focus + .check-accept {
+.check-input:focus + .privacy-policy .check-accept {
     border-color: var(--iris-color);
 }
+
 
 .submit-button {
     display: block;
